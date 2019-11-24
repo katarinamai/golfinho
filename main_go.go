@@ -32,6 +32,7 @@ func budget(salary float64) (
 }
 
 func main() {
+
 	//fmt.Println("Olá Mundo!")
 	fmt.Println(budget(3500))
 }
