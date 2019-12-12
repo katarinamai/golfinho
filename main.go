@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 )
@@ -44,8 +43,13 @@ func budget(salary float64, reserve string) (
 		message, goalCash
 }
 
+/*
 func main() {
 
 	//fmt.Println("Olá Mundo!")
 	fmt.Println(budget(3500, "N"))
+	s := &server{}
+	http.Handle("/", s)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+*/
