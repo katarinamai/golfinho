@@ -32,7 +32,7 @@ func budget(salary float64, reserve string) (
 	if reserve == "N" {
 		reserveTot := salary * 6
 		reserveRest := math.Round(reserveTot / goalCash)
-		message = "There are: " + strconv.FormatFloat(reserveRest, 'f', -1, 64) + " months away, " + " depodit monthly: "
+		message = "There are: " + strconv.FormatFloat(reserveRest, 'f', -1, 64) + " months away, " + " deposit monthly: "
 	} else {
 		message = "Use this value for a goal: "
 	}
