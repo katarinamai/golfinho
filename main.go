@@ -6,42 +6,42 @@ import (
 	"strconv"
 )
 
-// Function that separate the salary
-func budget(salary float64, reserva string) (
+// Function to separate the salary
+func budget(salary float64, reserve string) (
 	string, float64,
 	string, float64,
 	string, float64,
 	string, float64,
 	string, float64) {
 
-	// salary separation (percent)
+	// separation salary (percent)
 	essencialPerc := 0.55
-	aposentadoriaPerc := 0.1
-	educacaoPerc := 0.05
-	objetivoPerc := 0.2
-	livrePerc := 0.1
+	retirementPerc := 0.1
+	educationPerc := 0.05
+	goalPerc := 0.2
+	freePerc := 0.1
 
-	// value of salary separeted ($)
-	essencialReal := math.Round(salary * essencialPerc)
-	aposentadoriaReal := math.Round(salary * aposentadoriaPerc)
-	educacaoReal := math.Round(salary * educacaoPerc)
-	objetivoReal := math.Round(salary * objetivoPerc)
-	livreReal := math.Round(salary * livrePerc)
-	mensagem := ""
+	// value to separeted salary ($)
+	essencialCash := math.Round(salary * essencialPerc)
+	retirementCash := math.Round(salary * retirementPerc)
+	educationCash := math.Round(salary * educationPerc)
+	goalCash := math.Round(salary * goalPerc)
+	freeCash := math.Round(salary * freePerc)
+	message := ""
 
-	if reserva == "N" {
-		reservaTot := salary * 6
-		reservaRest := math.Round(reservaTot / objetivoReal)
-		mensagem = "Faltam: " + strconv.FormatFloat(reservaRest, 'f', -1, 64) + " meses " + " deposite por mês: "
+	if reserve == "N" {
+		reserveTot := salary * 6
+		reserveRest := math.Round(reserveTot / goalCash)
+		message = "There are: " + strconv.FormatFloat(reserveRest, 'f', -1, 64) + " months, " + " depodit monthly: "
 	} else {
-		mensagem = "Use esse valor para um objetivo: "
+		message = "Use this value for a goal: "
 	}
 
-	return "essencial: ", essencialReal,
-		"aposentadoria: ", aposentadoriaReal,
-		"educacao: ", educacaoReal,
-		"livre: ", livreReal,
-		mensagem, objetivoReal
+	return "essencial: ", essencialCash,
+		"retirement: ", retirementCash,
+		"education: ", educationCash,
+		"free: ", freeCash,
+		message, goalCash
 }
 
 func main() {
