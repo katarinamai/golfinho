@@ -27,14 +27,14 @@ func Calc(salary float64, reserve string) Budget {
 	essencialPerc := 0.55
 	retirementPerc := 0.1
 	educationPerc := 0.05
-	goalPerc := 0.2
+	// goalPerc := 0.2
 	freePerc := 0.1
 
 	// value to separeted salary ($)
 	essencialCash := math.Round(salary * essencialPerc)
 	retirementCash := math.Round(salary * retirementPerc)
 	educationCash := math.Round(salary * educationPerc)
-	goalCash := math.Round(salary * goalPerc)
+	// goalCash := math.Round(salary * goalPerc)
 	freeCash := math.Round(salary * freePerc)
 	// message := ""
 
