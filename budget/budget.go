@@ -1,6 +1,8 @@
 package budget
 
 import (
+	"encoding/json"
+	"fmt"
 	"math"
 )
 
@@ -12,14 +14,14 @@ type Person struct {
 
 // Budget ...
 type Budget struct {
-	essencial  float64
-	retirement float64
-	education  float64
-	free       float64
+	Essencial  float64 `json:"essencial"`
+	Retirement float64 `json:"retirement"`
+	Education  float64 `json:"education"`
+	Free       float64 `json:"free"`
 }
 
 // Calc Function to separate the salary
-func Calc(salary float64, reserve bool) Budget {
+func Calc(salary float64, reserve bool) []byte {
 
 	var b Budget
 
@@ -46,18 +48,18 @@ func Calc(salary float64, reserve bool) Budget {
 		// message = "Use this value for a goal: "
 	}
 
-	b.education = educationCash
-	b.essencial = essencialCash
-	b.free = freeCash
-	b.retirement = retirementCash
+	b.Education = educationCash
+	b.Essencial = essencialCash
+	b.Free = freeCash
+	b.Retirement = retirementCash
 
-	// j, err := json.Marshal(b)
-	// if err != nil {
-	// 	fmt.Println("error:", err)
-	// }
-	// fmt.Println(string(j))
+	j, err := json.Marshal(b)
+	if err != nil {
+		fmt.Println("error:", err)
+	}
+	fmt.Println(string(j))
 
-	// fmt.Println(b)
+	//fmt.Println(b)
 
-	return b
+	return j
 }

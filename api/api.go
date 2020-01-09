@@ -16,6 +16,7 @@ func budgetHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`{"message": "get called"}`))
 	case "POST":
 		w.WriteHeader(http.StatusCreated)
+		w.Write([]byte(`{"message": "get called"}`))
 		calcBudget(w, r)
 	case "PUT":
 		w.WriteHeader(http.StatusAccepted)
