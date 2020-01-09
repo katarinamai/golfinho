@@ -1,8 +1,6 @@
 package budget
 
 import (
-	"encoding/json"
-	"fmt"
 	"math"
 )
 
@@ -21,7 +19,7 @@ type Budget struct {
 }
 
 // Calc Function to separate the salary
-func Calc(salary float64, reserve string) Budget {
+func Calc(salary float64, reserve bool) Budget {
 
 	var b Budget
 
@@ -40,7 +38,7 @@ func Calc(salary float64, reserve string) Budget {
 	freeCash := math.Round(salary * freePerc)
 	// message := ""
 
-	if reserve == "N" {
+	if reserve == false {
 		// reserveTot := salary * 6
 		// reserveRest := math.Round(reserveTot / goalCash)
 		// message = "There are: " + strconv.FormatFloat(reserveRest, 'f', -1, 64) + " months away, " + " deposit monthly: "
@@ -53,11 +51,13 @@ func Calc(salary float64, reserve string) Budget {
 	b.free = freeCash
 	b.retirement = retirementCash
 
-	j, err := json.Marshal(b)
-	if err != nil {
-		fmt.Println("error:", err)
-	}
-	fmt.Println(string(j))
+	// j, err := json.Marshal(b)
+	// if err != nil {
+	// 	fmt.Println("error:", err)
+	// }
+	// fmt.Println(string(j))
+
+	// fmt.Println(b)
 
 	return b
 }
