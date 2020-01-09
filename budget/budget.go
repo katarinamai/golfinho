@@ -7,7 +7,7 @@ import (
 // Person ...
 type Person struct {
 	Salary  float64
-	Reserve string
+	Reserve bool
 }
 
 // Budget ...
