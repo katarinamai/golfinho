@@ -16,8 +16,9 @@ func budgetHandler(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`{"message": "get called"}`))
 	case "POST":
 		w.WriteHeader(http.StatusCreated)
-		w.Write([]byte(`{"message": "get called"}`))
+		//w.Write([]byte(`{"message": "get called"}`))
 		calcBudget(w, r)
+
 	case "PUT":
 		w.WriteHeader(http.StatusAccepted)
 		w.Write([]byte(`{"message": "put called"}`))
@@ -39,7 +40,6 @@ func calcBudget(w http.ResponseWriter, r *http.Request) {
 	err := json.NewDecoder(r.Body).Decode(&p)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusBadRequest)
-		return
 	}
 
 	// Do something with the Person struct...
@@ -47,7 +47,7 @@ func calcBudget(w http.ResponseWriter, r *http.Request) {
 	log.Println(p.Salary)
 	log.Println(p.Reserve)
 
-	budget.Calc(p.Salary, p.Reserve)
+	w.Write(budget.Calc(p.Salary, p.Reserve))
 }
 
 // Start a api linten and serve
