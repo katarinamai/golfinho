@@ -6,7 +6,7 @@ const { Header } = Layout;
 function HeaderPage() {
     return(
         <Header>
-            <Row justify="center">
+            <Row>
                 <Col span={24}>
                     <h1>Finance</h1>
                 </Col>

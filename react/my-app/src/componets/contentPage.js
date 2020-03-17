@@ -5,8 +5,8 @@ import { Row, Col } from 'antd';
 function ContentPage() {
     return(
         <div>
-            <Row gutter={[0, 400]}>
-                <Col>
+            <Row gutter={[3, 400]}>
+                <Col span={8}>
                     <InputSalary 
                         onChange={"ooo"} 
                         placeholder={"Input a number"} 
