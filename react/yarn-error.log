@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\katar\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\katar\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Program Files\Python37\Scripts;C:\Program Files\Python37;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Go\bin;C:\Program Files\Git LFS;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\katar\AppData\Local\Microsoft\WindowsApps;C:\Users\katar\AppData\Local\Programs\Python\Python37-32;C:\Users\katar\AppData\Local\Programs\Python\Python37-32\Script;.;C:\Program Files\JetBrains\PyCharm Edu 2019.2\bin;C:\Program Files\JetBrains\PyCharm Community Edition with Anaconda plugin 2019.2.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.1\bin;C:\Users\katar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\katar\go\bin;C:\Users\katar\AppData\Roaming\npm;C:\Users\katar\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.16.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:137008:13)
+      at Interface.emit (events.js:321:20)
+      at Interface._ttyWrite (readline.js:893:16)
+      at ReadStream.onkeypress (readline.js:198:10)
+      at ReadStream.emit (events.js:321:20)
+      at emitKeys (internal/readline/utils.js:438:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1160:36)
+      at ReadStream.emit (events.js:321:20)
+      at addChunk (_stream_readable.js:294:12)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
