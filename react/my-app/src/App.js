@@ -1,11 +1,20 @@
 import React from 'react';
 import './App.css';
-import { Input } from 'antd';
+import HeaderPage from './componets/headerPage';
+import ContentPage from './componets/contentPage';
+import FooterPage from './componets/footerPage';
+import { Layout } from 'antd';
 
 function App() {
   return (
     <>
-      <Input placeholder="Enter your salary $" />
+      <div>
+        <Layout>
+          <HeaderPage/>
+          <ContentPage/>
+          <FooterPage/>
+        </Layout>
+      </div>
     </>
   );
 }
