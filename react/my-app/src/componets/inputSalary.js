@@ -1,5 +1,6 @@
 import React from 'react';
-import { Input } from 'antd';
+import { Input, Button } from 'antd';
+import "antd/dist/antd.css";
 
 function InputSalary({ defaultValue, onChange, placeholder, title }) {
 
@@ -7,13 +8,19 @@ function InputSalary({ defaultValue, onChange, placeholder, title }) {
         console.log('changed', value);
       }
 
+    const styleDiv = {
+        width:'30%',
+        textAlign: 'center'
+    }
+
     return(
-        <div>
-            <div>{title}</div>
+        <div style={styleDiv}>                
             <Input 
                 onChange={onChange}
                 placeholder={placeholder}
             />
+            <Button type="primary">Calcular</Button>
+                
         </div>
     );
 }
