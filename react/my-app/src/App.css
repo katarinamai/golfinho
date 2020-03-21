@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.AppLayout {
+  background-color: #D2FEFF !important;
+  height:500px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

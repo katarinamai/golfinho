@@ -1,13 +1,17 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import "antd/dist/antd.css";
+import { Link } from 'react-router-dom';
 
 const { Header } = Layout;
 const style = {
     textAlign: 'center',
-    //border: '1px solid black',
-    backgroundColor:'white',
-    //color: 'white'
+    backgroundImage: 'linear-gradient(to bottom, #F6BEE5, #D2FEFF)'
+}
+const styleMenu = {
+    boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
+    transition: '0.3s',
+    borderRadius: '0 0 8px 8px'
 }
 
 function HeaderPage({nav1, nav2}) {
@@ -17,11 +21,19 @@ function HeaderPage({nav1, nav2}) {
             <Menu
                 theme="light"
                 mode="horizontal"
-                defaultSelectedKeys={['2']}
-                style={{ lineHeight: '64px' }}
+                defaultSelectedKeys={['1']}
+                style={styleMenu}
             >
-                <Menu.Item key="1">{nav1}</Menu.Item>
-                <Menu.Item key="2">{nav2}</Menu.Item>
+                <Menu.Item key="1">
+                    <Link to='/'>
+                        {nav1}
+                    </Link>
+                </Menu.Item>
+                <Menu.Item key="2">
+                    <Link to='/sobre'>
+                        {nav2}
+                    </Link>
+                </Menu.Item>
             </Menu>
         </Header>
     )
