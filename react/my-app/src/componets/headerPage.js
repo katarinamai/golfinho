@@ -14,7 +14,7 @@ const styleMenu = {
     borderRadius: '0 0 8px 8px'
 }
 
-function HeaderPage({nav1, nav2}) {
+function HeaderPage({nav1, nav2, nav3}) {
     return(
         <Header style={style}>
             <div className="logo" />
@@ -26,12 +26,17 @@ function HeaderPage({nav1, nav2}) {
             >
                 <Menu.Item key="1">
                     <Link to='/'>
-                        {nav1}
+                        Home
                     </Link>
                 </Menu.Item>
                 <Menu.Item key="2">
+                    <Link to="/calculadora">
+                        Calculadora
+                    </Link>
+                </Menu.Item>
+                <Menu.Item key="3">
                     <Link to='/sobre'>
-                        {nav2}
+                        Sobre
                     </Link>
                 </Menu.Item>
             </Menu>

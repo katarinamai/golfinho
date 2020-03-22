@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Input, Button } from 'antd';
+import { InputNumber, Button, Form } from 'antd';
 import "antd/dist/antd.css";
 import { useForm } from 'react-hook-form';
 
 function InputSalary({placeholder, title}) {
     const styleDiv = {
-        width:'30%',
+       // width:'30%',
         textAlign: 'center'
     }
 
@@ -14,17 +14,42 @@ function InputSalary({placeholder, title}) {
     console.log(errors); 
     console.log(errors);
 
+    const onFinish = values => {
+        console.log('Success:', values);
+    };
+    
+    const onFinishFailed = errorInfo => {
+        console.log('Failed:', errorInfo);
+    };
+    
+    
+
     return(
         <div style={styleDiv}>
-            <form onSubmit={handleSubmit(onSubmit)}>  
-                <span>{title}</span>             
-                <Input 
-                    type="text"
-                    name="name"
-                    placeholder={placeholder}
-                />
-                <Button type="submit" onClick={register({required: true})}>Calcular</Button>
-            </form>
+            <Form 
+                onSubmit={handleSubmit(onSubmit)}
+                onFinish={onFinish}
+                onFinishFailed={onFinishFailed}> 
+            <Form.Item
+                label={title}
+                name="salary"
+                rules={[
+                {
+                    required: true,
+                    message: 'Por favor digite seu salário.',
+                },
+                ]}
+            > 
+                    <InputNumber
+                        placeholder={placeholder}
+                    />
+                </Form.Item>
+                <Form.Item>
+                    <Button type="primary" htmlType="submit" onClick={register({required: true})}>
+                        Calcular
+                    </Button>
+                </Form.Item>
+            </Form>
         </div>
     );
 }

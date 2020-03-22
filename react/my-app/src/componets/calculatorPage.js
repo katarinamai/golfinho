@@ -19,10 +19,9 @@ function CalculatorPage() {
     return(
             <div style={styleDiv}>
                 <InputSalary 
-                    placeholder={"Input a number"} 
-                    title={"Enter your salary"} 
+                    placeholder={"Salário R$"} 
+                    title={"Digite seu salário"} 
                 />
-                <Loading/>
             </div>
     )
 }
