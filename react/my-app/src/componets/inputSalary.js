@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Input, Button } from 'antd';
 import "antd/dist/antd.css";
 import { useForm } from 'react-hook-form';
-import Loading from './loading';
 
 function InputSalary({placeholder, title}) {
     const styleDiv = {

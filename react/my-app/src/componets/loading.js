@@ -7,7 +7,7 @@ function Loading(){
         loop: true,
         autoplay: true,
         prerender: true,
-        animationData: LoadingImg
+        animationData: LoadingImg,
     };
     return(
         <div style={{width:'500', height:'100px'}}>
