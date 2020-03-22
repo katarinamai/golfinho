@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactBodyMovin from 'react-bodymovin';
-import ImgHome2 from '../img/home_img.json';
+import Scrolldown from '../img/scroll-down.json';
 
-function HomeImg(){
+function Scroll(){
     const bodyMovinOptions = {
         loop: true,
         autoplay: true,
         prerender: true,
-        animationData: ImgHome2,
+        animationData: Scrolldown,
     };
     return(
-        <div style={{width:'60%'}}>
+        <div style={{width:'8%'}}>
             <ReactBodyMovin options={bodyMovinOptions}/>
         </div>
     )
 }
 
-export default HomeImg;
+export default Scroll;

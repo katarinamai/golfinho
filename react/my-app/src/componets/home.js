@@ -1,24 +1,31 @@
 import React from 'react';
 import HomeImg from './homeImg';
 import { Anchor } from 'antd';
+import Scroll from './scrolldown';
 
 function Home() {
     const styleDiv = {
         //backgroundColor:'whiteSmoke',
         width:'90%',
         display:'flex',
-        justifyContent:'center',
+        flexDirection: 'column',
+        alignItems: 'center',
         marginTop: '0.5%',
         marginLeft:'5%',
         marginRight:'5%',
         padding:'2%',
-        height:'50%'
+        justifyContent: 'space-between',
+        //height:'50%'
     }
     const { Link } = Anchor;
 
     return(
         <div style={styleDiv}>
             <HomeImg/>
+            <span>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </span>
+            <Scroll/>
         </div>
     )
 }
