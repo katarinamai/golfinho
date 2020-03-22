@@ -7,19 +7,18 @@ import CaculatorPage from './componets/calculatorPage';
 import FooterPage from './componets/footerPage';
 import About from './componets/about';
 import Home from './componets/home';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
     <Router>
       <div>
-        <HeaderPage nav1="Home" nav2="Calculadora" nav2="Sobre"/>
+        <HeaderPage nav1="Home" nav2="Calculadora" nav3="Sobre"/>
         <Layout className="AppLayout layout">
           <div className="styleDiv">
-            <Switch>
-              <Route path='/' exact component={Home}/>
-              <Route path='/calculadora' component={CaculatorPage}/>
-              <Route path='/sobre' component={About}/>
-            </Switch>
+            <Home/>
+            <CaculatorPage/>
+            <About/>
           </div>
         </Layout>
         <FooterPage/>

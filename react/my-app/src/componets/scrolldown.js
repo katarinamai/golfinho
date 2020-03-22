@@ -10,8 +10,10 @@ function Scroll(){
         animationData: Scrolldown,
     };
     return(
-        <div style={{width:'8%'}}>
-            <ReactBodyMovin options={bodyMovinOptions}/>
+        <div style={{width:'8%', cursor: 'pointer'}}>
+            <a href="#calculadora">
+                <ReactBodyMovin options={bodyMovinOptions}/>
+            </a>
         </div>
     )
 }

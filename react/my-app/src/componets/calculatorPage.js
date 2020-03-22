@@ -1,7 +1,6 @@
 import React from 'react';
 import InputSalary from './inputSalary';
 import "antd/dist/antd.css";
-import Loading from './loading';
 
 function CalculatorPage() {
     const styleDiv = {
@@ -9,20 +8,24 @@ function CalculatorPage() {
         width:'90%',
         display:'flex',
         justifyContent:'center',
-        marginTop: '0.5%',
+        marginTop: '5%',
         marginLeft:'5%',
         marginRight:'5%',
         padding:'2%',
-        height:'50%'
+        height:'500px',
+        flexDirection: 'column',
+        alignItems: 'center',
     }
 
     return(
-            <div style={styleDiv}>
+            <section style={styleDiv} id="calculadora">
+                <a href="#calculadora" class="anchor">#</a>
+                <span>Digite seu salário abaixo e clique em calcular.</span>
                 <InputSalary 
                     placeholder={"Salário R$"} 
                     title={"Digite seu salário"} 
                 />
-            </div>
+            </section>
     )
 }
 

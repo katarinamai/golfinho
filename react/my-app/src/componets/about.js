@@ -10,15 +10,17 @@ function About() {
         marginLeft:'5%',
         marginRight:'5%',
         padding:'2%',
-        height:'50%'
+        height:'100%',
+        marginBottom:'50px',
     }
 
     return(
-        <div style={styleDiv}>
+        <section style={styleDiv} id="sobre">
+            <a href="#sobre" class="anchor">#</a>
             <h1>
                 OI
             </h1>
-        </div>
+        </section>
     )
 }
 

@@ -4,9 +4,9 @@ import "antd/dist/antd.css";
 import { useForm } from 'react-hook-form';
 
 function InputSalary({placeholder, title}) {
-    const styleDiv = {
+    const styleDivInput = {
        // width:'30%',
-        textAlign: 'center'
+        textAlign: 'center',
     }
 
     const { register, handleSubmit, errors } = useForm();
@@ -25,7 +25,7 @@ function InputSalary({placeholder, title}) {
     
 
     return(
-        <div style={styleDiv}>
+        <div style={styleDivInput}>
             <Form 
                 onSubmit={handleSubmit(onSubmit)}
                 onFinish={onFinish}

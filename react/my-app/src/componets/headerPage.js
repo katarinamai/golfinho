@@ -1,12 +1,14 @@
 import React from 'react';
 import { Layout, Menu } from 'antd';
 import "antd/dist/antd.css";
-import { Link } from 'react-router-dom';
+
 
 const { Header } = Layout;
 const style = {
     textAlign: 'center',
-    backgroundImage: 'linear-gradient(to bottom, #F6BEE5, #D2FEFF)'
+    backgroundImage: 'linear-gradient(to bottom, #F6BEE5, #D2FEFF)',
+    position: "fixed",
+    width: '100%',
 }
 const styleMenu = {
     boxShadow: '0 4px 8px 0 rgba(0,0,0,0.2)',
@@ -15,6 +17,7 @@ const styleMenu = {
 }
 
 function HeaderPage({nav1, nav2, nav3}) {
+
     return(
         <Header style={style}>
             <div className="logo" />
@@ -25,19 +28,19 @@ function HeaderPage({nav1, nav2, nav3}) {
                 style={styleMenu}
             >
                 <Menu.Item key="1">
-                    <Link to='/'>
-                        Home
-                    </Link>
+                    <a href="#home">
+                        {nav1}
+                    </a>
                 </Menu.Item>
                 <Menu.Item key="2">
-                    <Link to="/calculadora">
-                        Calculadora
-                    </Link>
+                    <a href="#calculadora">
+                        {nav2}
+                    </a>
                 </Menu.Item>
                 <Menu.Item key="3">
-                    <Link to='/sobre'>
-                        Sobre
-                    </Link>
+                    <a href="#sobre">
+                        {nav3}
+                    </a>
                 </Menu.Item>
             </Menu>
         </Header>

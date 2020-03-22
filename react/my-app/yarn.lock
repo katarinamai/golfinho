@@ -6474,6 +6474,11 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "^3.0.0"
 
+lodash.throttle@^4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
@@ -9085,6 +9090,18 @@ react-scripts@3.4.0:
   optionalDependencies:
     fsevents "2.1.2"
 
+react-scroll-parallax@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/react-scroll-parallax/-/react-scroll-parallax-2.3.2.tgz#7307a8985a6b11514bd5c7ab46302eb436d1ddda"
+  integrity sha512-Ol9l1vboFAtQf9dyUiSefSipqbNRuFCkS0pSo74LkEKY1QId6nlPPc4PuhbHrvejcdUqn3E6eY+06LYsKUwFgQ==
+  dependencies:
+    prop-types "^15.5.10"
+
+react-smart-sections@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/react-smart-sections/-/react-smart-sections-0.0.2.tgz#f954212d69be7fdc134a53a9fe261fd12d6a0337"
+  integrity sha1-+VQhLWm+f9wTSlOp/iYf0S1qAzc=
+
 react@^16.13.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
@@ -9847,6 +9864,13 @@ slice-ansi@^2.1.0:
     ansi-styles "^3.2.0"
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
+
+smart-sections@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/smart-sections/-/smart-sections-0.0.6.tgz#d839b43bcbaa1d7f9c5b415a9fbee42c6daf62fe"
+  integrity sha512-8F5ORuSYFFoB033KiB+7vI1VoXoTCPMD9Aax/lhXT0duoT+R7CkXsCT9TFL1rTax7eMniXKJmd5m0htbhOPq4w==
+  dependencies:
+    lodash.throttle "^4.1.1"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

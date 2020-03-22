@@ -30,7 +30,6 @@
 
 .AppLayout {
   background-color: #D2FEFF !important;
-  height:500px;
 }
 
 .styleDiv {
@@ -38,11 +37,17 @@
   width:90%;
   display:flex;
   justify-content:center;
-  margin-top:0.5%;
+  margin-top:5%;
   margin-left:5%;
   margin-right:5%;
   padding:2%;
-  height:92%;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 600px) {
+  .styleDiv {
+    height: 100%;
+  }
 }
 
 @keyframes App-logo-spin {
