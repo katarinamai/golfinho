@@ -5,7 +5,7 @@ import Loading from './loading';
 
 function CalculatorPage() {
     const styleDiv = {
-        backgroundColor:'white',
+        //backgroundColor:'whiteSmoke',
         width:'90%',
         display:'flex',
         justifyContent:'center',

@@ -33,6 +33,18 @@
   height:500px;
 }
 
+.styleDiv {
+  background-color: white;
+  width:90%;
+  display:flex;
+  justify-content:center;
+  margin-top:0.5%;
+  margin-left:5%;
+  margin-right:5%;
+  padding:2%;
+  height:92%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

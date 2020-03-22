@@ -14,11 +14,13 @@ function App() {
       <div>
         <HeaderPage nav1="Home" nav2="Calculadora" nav2="Sobre"/>
         <Layout className="AppLayout layout">
-          <Switch>
-            <Route path='/' exact component={Home}/>
-            <Route path='/calculadora' component={CaculatorPage}/>
-            <Route path='/sobre' component={About}/>
-          </Switch>
+          <div className="styleDiv">
+            <Switch>
+              <Route path='/' exact component={Home}/>
+              <Route path='/calculadora' component={CaculatorPage}/>
+              <Route path='/sobre' component={About}/>
+            </Switch>
+          </div>
         </Layout>
         <FooterPage/>
       </div>
