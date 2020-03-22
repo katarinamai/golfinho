@@ -1,6 +1,7 @@
 import React from 'react';
 import InputSalary from './inputSalary';
 import "antd/dist/antd.css";
+import LoadingImg from './loadingImg'
 
 function CalculatorPage() {
     const styleDiv = {
@@ -25,6 +26,7 @@ function CalculatorPage() {
                     placeholder={"Salário R$"} 
                     title={"Digite seu salário"} 
                 />
+                <LoadingImg/>
             </section>
     )
 }

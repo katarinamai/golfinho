@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactBodyMovin from 'react-bodymovin';
-import LoadingImg from '../img/loading.json';
+import coins from '../img/coins.json';
 
-function Loading(){
+function LoadingImg(){
     const bodyMovinOptions = {
         loop: true,
         autoplay: true,
         prerender: true,
-        animationData: LoadingImg,
+        animationData: coins,
     };
     return(
-        <div style={{width:'500', height:'100px'}}>
+        <div style={{width:'500px', height:'100px'}}>
             <ReactBodyMovin options={bodyMovinOptions}/>
         </div>
     )
 }
 
-export default Loading;
+export default LoadingImg;

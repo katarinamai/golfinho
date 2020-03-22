@@ -10,8 +10,11 @@ function About() {
         marginLeft:'5%',
         marginRight:'5%',
         padding:'2%',
-        height:'100%',
-        marginBottom:'50px',
+        marginBottom:'50px',        
+        justifyContent:'center',
+        flexDirection: 'column',
+        alignItems: 'center',
+        height:'500px',
     }
 
     return(

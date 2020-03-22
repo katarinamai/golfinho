@@ -7,7 +7,9 @@ const { Header } = Layout;
 const style = {
     textAlign: 'center',
     backgroundImage: 'linear-gradient(to bottom, #F6BEE5, #D2FEFF)',
-    position: "fixed",
+    position: 'fixed',
+    top: 0,
+    zIndex: 9,
     width: '100%',
 }
 const styleMenu = {
