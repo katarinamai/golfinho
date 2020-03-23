@@ -13,7 +13,7 @@ function Banner() {
         justifyContent: 'center',
     }
     return(
-        <section style={styleSetionBanner}>
+        <section style={styleSetionBanner} className="banner">
             <img src={BannerImg} style={styleBanner} className="banner"/>
         </section>
     )
