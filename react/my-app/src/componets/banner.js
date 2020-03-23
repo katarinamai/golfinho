@@ -14,7 +14,7 @@ function Banner() {
     }
     return(
         <section style={styleSetionBanner}>
-            <img src={BannerImg} style={styleBanner}/>
+            <img src={BannerImg} style={styleBanner} className="banner"/>
         </section>
     )
 }

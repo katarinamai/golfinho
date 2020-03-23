@@ -3,7 +3,7 @@ import Banner from './banner';
 
 function About() {
 
-    const styleDiv = {
+    const styleDivAbout = {
         backgroundColor:'white',
         width:'90%',
         display:'flex',
@@ -19,12 +19,11 @@ function About() {
     }
 
     return(
-        <section style={styleDiv} id="sobre">
+        <section style={styleDivAbout} id="sobre">
             <a href="#sobre" class="anchor">#</a>
             <h1>
                 OI
             </h1>
-            <Banner/>
         </section>
     )
 }

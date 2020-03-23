@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { InputNumber, Button, Form } from 'antd';
 import "antd/dist/antd.css";
 import { useForm } from 'react-hook-form';
@@ -11,8 +11,7 @@ function InputSalary({placeholder, title, nameButtom}) {
 
     const { register, handleSubmit, errors } = useForm();
     const onSubmit = data => console.log(data);
-    console.log(errors); 
-    console.log(errors);
+    console.log(errors);  
 
     const onFinish = values => {
         console.log('Success:', values);
