@@ -3,7 +3,7 @@ import { InputNumber, Button, Form } from 'antd';
 import "antd/dist/antd.css";
 import { useForm } from 'react-hook-form';
 
-function InputSalary({placeholder, title}) {
+function InputSalary({placeholder, title, nameButtom}) {
     const styleDivInput = {
        // width:'30%',
         textAlign: 'center',
@@ -46,7 +46,7 @@ function InputSalary({placeholder, title}) {
                 </Form.Item>
                 <Form.Item>
                     <Button type="primary" htmlType="submit" onClick={register({required: true})}>
-                        Calcular
+                        {nameButtom}
                     </Button>
                 </Form.Item>
             </Form>

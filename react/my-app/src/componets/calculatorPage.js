@@ -21,10 +21,11 @@ function CalculatorPage() {
     return(
             <section style={styleDiv} id="calculadora">
                 <a href="#calculadora" class="anchor">#</a>
-                <span>Digite seu salário abaixo e clique em calcular.</span>
+                <h3>Não divulgaremos para ninguém!!!</h3>
                 <InputSalary 
                     placeholder={"Salário R$"} 
-                    title={"Digite seu salário"} 
+                    title={"Digite seu salário"}
+                    nameButtom={"Calcular Orçamento"}
                 />
                 <LoadingImg/>
             </section>

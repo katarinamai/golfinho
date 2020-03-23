@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from './banner'; 
 
 function About() {
 
@@ -23,6 +24,7 @@ function About() {
             <h1>
                 OI
             </h1>
+            <Banner/>
         </section>
     )
 }
