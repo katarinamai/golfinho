@@ -1,6 +1,11 @@
 import React from 'react';
 import HomeImg from './homeImg';
 import Scroll from './scrolldown';
+import {Anchor} from 'antd';
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
+configureAnchors({offset: -60, scrollDuration: 500})
+
 
 function Home() {
     const styleDiv = {
@@ -18,8 +23,11 @@ function Home() {
     }
 
     return(
-        <section style={styleDiv} id="home" className="Fade">
-            <a href="#home" className="anchor">#</a>
+        <ScrollableAnchor id="home">
+        <section style={styleDiv} className="Fade">
+            <Anchor affix={false}>
+                <a href="#home" className="anchor">#</a>
+            </Anchor>
             <h1>
                 Calcule o seu orçamento!
             </h1>
@@ -29,6 +37,7 @@ function Home() {
             </span>
             <Scroll/>
         </section>
+        </ScrollableAnchor>
     )
 }
 

@@ -1,5 +1,8 @@
 import React from 'react';
 import Banner from './banner'; 
+import {Anchor} from 'antd';
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 
 function About() {
 
@@ -19,13 +22,17 @@ function About() {
     }
 
     return(
-        <section style={styleDivAbout} id="sobre">
-            <a href="#sobre" className="anchor">#</a>
+    <ScrollableAnchor id="sobre">
+        <section style={styleDivAbout}>
+            <Anchor affix={false}>
+                <a href="#sobre" className="anchor">#</a>
+            </Anchor>
             <h1>
                 OI
             </h1>
             <Banner/>
         </section>
+    </ScrollableAnchor>
     )
 }
 

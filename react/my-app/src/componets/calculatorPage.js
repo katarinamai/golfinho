@@ -3,6 +3,8 @@ import InputSalary from './inputSalary';
 import "antd/dist/antd.css";
 import LoadingImg from './loadingImg';
 import {Anchor} from 'antd';
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 
 function CalculatorPage() {
     const styleDiv = {
@@ -20,8 +22,11 @@ function CalculatorPage() {
     }
 
     return(
-            <section style={styleDiv} id="calculadora">
-                <a href="#calculadora" className="anchor">#</a>
+        <ScrollableAnchor id="calculadora">
+            <section style={styleDiv}>
+                <Anchor affix={false}>
+                    <a href="#calculadora" className="anchor">#</a>
+                </Anchor>
                 <h3>Não divulgaremos para ninguém!!!</h3>
                 <InputSalary 
                     placeholder={"Salário R$"} 
@@ -30,6 +35,7 @@ function CalculatorPage() {
                 />
                 <LoadingImg/>
             </section>
+        </ScrollableAnchor> 
     )
 }
 
