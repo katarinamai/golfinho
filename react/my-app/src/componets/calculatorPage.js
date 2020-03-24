@@ -1,7 +1,8 @@
 import React from 'react';
 import InputSalary from './inputSalary';
 import "antd/dist/antd.css";
-import LoadingImg from './loadingImg'
+import LoadingImg from './loadingImg';
+import {Anchor} from 'antd';
 
 function CalculatorPage() {
     const styleDiv = {
@@ -20,7 +21,7 @@ function CalculatorPage() {
 
     return(
             <section style={styleDiv} id="calculadora">
-                <a href="#calculadora" class="anchor">#</a>
+                <a href="#calculadora" className="anchor">#</a>
                 <h3>Não divulgaremos para ninguém!!!</h3>
                 <InputSalary 
                     placeholder={"Salário R$"} 

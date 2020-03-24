@@ -29,17 +29,17 @@ function HeaderPage({nav1, nav2, nav3}) {
                 id="menu"
             >
                 <Menu.Item key="home">
-                    <a href="#home" class="anchor">
+                    <a href="#home" className="anchor">
                         {nav1}
                     </a>
                 </Menu.Item>
                 <Menu.Item key="calculadora">
-                    <a href="#calculadora" class="anchor">
+                    <a href="#calculadora" className="anchor">
                         {nav2}
                     </a>
                 </Menu.Item>
                 <Menu.Item key="sobre">
-                    <a href="#sobre" class="anchor">
+                    <a href="#sobre" className="anchor">
                         {nav3}
                     </a>
                 </Menu.Item>

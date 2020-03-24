@@ -20,7 +20,7 @@ function About() {
 
     return(
         <section style={styleDivAbout} id="sobre">
-            <a href="#sobre" class="anchor">#</a>
+            <a href="#sobre" className="anchor">#</a>
             <h1>
                 OI
             </h1>

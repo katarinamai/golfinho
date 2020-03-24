@@ -19,7 +19,7 @@ function Home() {
 
     return(
         <section style={styleDiv} id="home" className="Fade">
-            <a href="#home" class="anchor">#</a>
+            <a href="#home" className="anchor">#</a>
             <h1>
                 Calcule o seu orçamento!
             </h1>
