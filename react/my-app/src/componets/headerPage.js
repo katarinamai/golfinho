@@ -2,7 +2,6 @@ import React from 'react';
 import { Layout, Menu } from 'antd';
 import "antd/dist/antd.css";
 
-
 const { Header } = Layout;
 const style = {
     textAlign: 'center',
@@ -19,7 +18,6 @@ const styleMenu = {
 }
 
 function HeaderPage({nav1, nav2, nav3}) {
-
     return(
         <Header style={style}>
             <div className="logo" />
@@ -28,19 +26,20 @@ function HeaderPage({nav1, nav2, nav3}) {
                 mode="horizontal"
                 defaultSelectedKeys={['1']}
                 style={styleMenu}
+                id="menu"
             >
-                <Menu.Item key="1">
-                    <a href="#home">
+                <Menu.Item key="home">
+                    <a href="#home" class="anchor">
                         {nav1}
                     </a>
                 </Menu.Item>
-                <Menu.Item key="2">
-                    <a href="#calculadora">
+                <Menu.Item key="calculadora">
+                    <a href="#calculadora" class="anchor">
                         {nav2}
                     </a>
                 </Menu.Item>
-                <Menu.Item key="3">
-                    <a href="#sobre">
+                <Menu.Item key="sobre">
+                    <a href="#sobre" class="anchor">
                         {nav3}
                     </a>
                 </Menu.Item>
