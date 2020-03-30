@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactBodyMovin from 'react-bodymovin';
-import Scrolldown from '../img/scroll-down.json';
+import Scrolldown from '../assets/scroll-down.json';
 
 function Scroll(){
     const bodyMovinOptions = {

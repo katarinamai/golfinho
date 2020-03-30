@@ -1,19 +1,19 @@
 import React from 'react';
 import ReactBodyMovin from 'react-bodymovin';
-import ImgHome2 from '../img/home_img.json';
+import Loading from '../assets/loading.json';
 
-function HomeImg(){
+function LoadingImg(){
     const bodyMovinOptions = {
         loop: true,
         autoplay: true,
         prerender: true,
-        animationData: ImgHome2,
+        animationData: Loading,
     };
     return(
-        <div style={{width:'60%'}}>
+        <div style={{width:'20%'}}>
             <ReactBodyMovin options={bodyMovinOptions}/>
         </div>
     )
 }
 
-export default HomeImg;
+export default LoadingImg;

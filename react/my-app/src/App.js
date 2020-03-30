@@ -1,14 +1,15 @@
 import React from 'react';
 import { Layout } from 'antd';
 import './App.css';
-import HeaderPage from './componets/headerPage';
-import CaculatorPage from './componets/calculatorPage';
-import FooterPage from './componets/footerPage';
-import About from './componets/about';
-import Home from './componets/home';
-import Banner from './componets/banner'; 
+import HeaderPage from './pages/headerPage';
+import CaculatorPage from './pages/Calculator';
+import FooterPage from './pages/footerPage';
+import About from './pages/About';
+import Home from './pages/Home';
+import Banner from './components/Banner'; 
 
 function App() {
+
   return (
     <div>
       <HeaderPage nav1="Home" nav2="Calculadora" nav3="Sobre"/>

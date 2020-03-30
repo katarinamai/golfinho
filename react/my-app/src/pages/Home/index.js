@@ -1,30 +1,18 @@
 import React from 'react';
-import HomeImg from './homeImg';
-import Scroll from './scrolldown';
+import HomeImg from '../homeImg';
+import Scroll from '../scrolldown';
 import {Anchor} from 'antd';
-import ScrollableAnchor from 'react-scrollable-anchor'
-import { configureAnchors } from 'react-scrollable-anchor'
-configureAnchors({offset: -60, scrollDuration: 500})
+import './styles.css';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { configureAnchors } from 'react-scrollable-anchor';
+configureAnchors({offset: -115, scrollDuration: 500});
 
 
 function Home() {
-    const styleDiv = {
-        //backgroundColor:'whiteSmoke',
-        width:'90%',
-        display:'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        marginTop: '0.5%',
-        marginLeft:'5%',
-        marginRight:'5%',
-        padding:'2%',
-        justifyContent: 'space-between',
-        height:'100%',
-    }
 
     return(
         <ScrollableAnchor id="home">
-        <section style={styleDiv} className="Fade">
+        <section className="div Fade">
             <Anchor affix={false}>
                 <a href="#home" className="anchor">#</a>
             </Anchor>
