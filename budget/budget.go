@@ -3,6 +3,7 @@ package budget
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"math"
 )
 
@@ -55,11 +56,9 @@ func Calc(salary float64, reserve bool) []byte {
 
 	j, err := json.Marshal(b)
 	if err != nil {
-		fmt.Println("error:", err)
+		log.Println(err.Error())
 	}
 	fmt.Println(string(j))
-
-	//fmt.Println(b)
 
 	return j
 }
