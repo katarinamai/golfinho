@@ -46,6 +46,7 @@ func calcBudget(w http.ResponseWriter, r *http.Request) {
 	log.Println(p.Salary)
 	log.Println(p.Reserve)
 
+	w.Write(budget.Calc(p.Salary, p.Reserve))
 	budget.Calc(p.Salary, p.Reserve)
 }
 
