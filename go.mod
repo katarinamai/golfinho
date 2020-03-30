@@ -1,3 +1,3 @@
-module api-test
+module github.com/katarinamai/golfinho
 
 go 1.13
