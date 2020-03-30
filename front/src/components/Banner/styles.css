@@ -1,0 +1,10 @@
+
+.styleBanner {
+        width:468px;
+        height:60px;
+    }
+.styleSetionBanner {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
